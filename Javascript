@@ -1,0 +1,310 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+   <style>
+
+  .bordered{
+    width: 50%;
+    height: 100%;
+    background :pink;
+    margin: auto;
+  border: 10px ridge darkorange;
+
+  
+
+  }
+</style> 
+<div class="bordered">
+<body bgcolor="">
+ 
+
+<p><font size="100"><center>ACTIVITY IN JAVASCRIPT</center></font> </p>
+
+<h1>Variables</h1>
+<h3>1. Switch the values of two variables.</h3>
+<script>{
+var a, b, temp;
+   a = 1;
+   b = 3;
+ 
+ document.write("<b>Original: a, b =</b> "+a+", "+ + b + "<br/>"); 
+
+   temp = b;
+   b = a;
+   a = temp; 
+   document.write("<b>Switch: a, b =<b/> "+a+", "+ + b);
+
+ 
+ }                                                  
+
+
+
+
+    
+
+
+</script>
+
+</body>
+
+<body>
+
+
+<h1>Conditional</h1>
+<h3>2. Determine the highest no. from three(3) variables.</h3>
+<script>{
+var a=0;
+  b=1;
+  c=2;
+  document.write("A="+a+ "<br/>");
+  document.write("B="+b+ "<br/>");
+  document.write("C="+c+ "<br/>");
+
+
+if  (a>b && a>c){
+  document.write("The highest number:" +a);
+}
+if(b>a && b>c){
+  document.write("The highest number:" +b);
+}
+else{
+  document.write("The highest number:" +c);
+}
+
+}
+
+
+
+
+    
+
+
+</script>
+
+</body>
+
+
+
+
+
+<body >
+	<title>Looping</title>
+  <h1>Looping Statement</h1>
+  <h2>3. For Loop</h2>
+<script type="text/javascript">
+   var rows=10;
+
+   
+    for (var i = 1; i<=rows; i++) 
+    {
+        for(var j=1; j<=(rows-i); j++)
+      {
+          document.write("&nbsp &nbsp ");
+      }
+        for(var k=1; k<=2*i-1; k++)
+      {
+          document.write("* &nbsp");
+      }
+          document.write("<br/>");
+
+
+    
+          
+       
+    }
+
+
+</script>
+
+	
+</body>
+<body >
+  <title>While Loop.</title>
+  <h2>4. While Loop</h2>
+<script type="text/javascript">
+
+var rows =10;     
+       var base= 1;
+       var stars = 1;
+
+       while (base <= rows){
+         var Counter = 1;
+         var Space = rows-base; 
+
+         while (Space >=0){
+          document.write(" &nbsp &nbsp");
+            Space--;
+         }         
+
+         while (Counter <= stars){
+            document.write("* &nbsp");
+            Counter++;
+         }
+
+            document.write();
+            base++;
+            stars=2*base-1;   
+            document.write("<br/>")
+       }
+
+
+
+
+
+   
+
+
+    
+          
+       
+    
+
+
+</script>
+
+  
+</body>
+<body >
+ 
+  <h2>5.Do While Loop</h2>
+<script type="text/javascript">
+
+var rows =10;     
+       var base= 1;
+       var stars = 1;
+
+      do{
+         var Counter = 1;
+         var Space = rows-base; 
+
+        do{
+          document.write(" &nbsp &nbsp");
+            Space--;
+         }   
+          while (Space >=0)      
+
+         do{
+            document.write("* &nbsp");
+            Counter++;
+         }
+         while (Counter <= stars)
+
+            document.write();
+            base++;
+            stars=2*base-1;   
+            document.write("<br/>")
+       }
+
+ while (base <= rows)
+
+
+
+   
+
+
+    
+          
+       
+    
+
+
+</script>
+
+  
+</body>
+
+<h1>Make a program that display a series of the ff. numbers:</h1>
+<h2>&#10020;I use While Loop:for Odd Number<br/> &#10020;Do While Loop:for Even Number<br/>&#10020;For Loop:for Fibonacci Number</h2>
+
+
+<h3>1. ODD NUMBER</h3>
+<script>{
+
+
+    counter = 1;
+    while (counter <= 10) {  
+      if(counter%2 != 0)
+        document.write("&nbsp &nbsp", counter);
+        
+        counter = counter +2;  
+      }
+       
+
+
+}
+</script>
+<h3>2. EVEN NUMBER</h3>
+<script>{
+
+
+    counter = 0;
+    do { 
+     if(counter%2 != 1) 
+    document.write("&nbsp &nbsp", counter); 
+        
+        counter = counter +2;  
+      }
+       while (counter <= 10)
+
+
+}
+
+
+
+    
+
+
+ </script>
+
+    
+
+
+
+<h3>3. FIBONACCI NUMBER</h3>
+<script>
+  var var1 = 0;
+    var var2 = 1;
+    var var3;
+
+    var num = 10;
+
+    
+
+    for(var i=0; i <= num;i++)
+    {
+      if(i<=1)
+        var3=i;
+      else
+    {
+    
+        var3 = var1 + var2;
+        var1 = var2;
+        var2 = var3;
+}
+        document.write(var3+"&nbsp &nbsp");
+    }
+ 
+ 
+
+
+      
+
+
+
+
+
+
+    
+
+
+</script>
+</div>
+
+
+
+
+
+
+</head>
+</html>
