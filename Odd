@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+
+
+</head>
+<body>
+	<h1>1. ODD NUMBER</h1>
+
+<script>{
+
+
+     var counter = 1;
+    while (counter <= 100) {  
+    if(counter%2 != 0)
+    
+        console.log("&nbsp &nbsp", counter);
+        
+        counter++;  
+    }
+      
+       
+
+
+}
+</script>
+
+</body>
+</html>
