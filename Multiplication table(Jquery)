@@ -1,0 +1,83 @@
+<!DOCTYPE html>  v 
+<html>
+<head>
+	<title>MULTIPLICATION TABLE</title>
+	<style>
+
+  .bordered {
+    width: 50%;
+    height: 200%;
+    background: yellow;
+    margin: auto;
+	border: 10px ridge black;
+	padding: 20px;
+
+  
+
+  }
+</style> 
+
+		
+	<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript">
+		
+			$(document).ready(function(){
+
+
+				var board=0, boards=[];
+		$('#btn_num').click(function(){
+
+		$('#multiplication').html('');
+
+			board=$('#board').val();
+
+temp_src=""
+ for(var row=1; row <=board; row++){
+
+ temp_src=$('<tr></tr>');
+		 for(var col=1; col<=board; col++){
+
+ 			temp_src.append($('<td>'+ row*col+'</td>'));
+ 		}
+ 
+ 	$('#multiplication').append(temp_src);
+ 	
+ 	
+ }
+
+			})
+	}) 
+
+
+
+
+		
+	
+
+
+	
+
+
+</script>
+
+		
+</head>
+<body>
+	<div class="bordered">s
+		<center><h1><mark>Javascript Multi-Dimensional Array</mark></h1></center>
+
+	<h2>Create a multiplication table with index labels for mapping</h2>
+	<h3>The size of the multiplication table varies from the input (take note) its not fixed.</h3>
+	<h2>Multiplication table</h2>
+	Size <input type="number" name="" id="board">
+	<br>
+
+	<button type="button" id="btn_num">Generate</button><br>
+
+	<table id="multiplication" border="1">
+	
+	</table>
+</div>
+
+</body>
+</html>
